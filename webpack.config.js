@@ -1,7 +1,11 @@
 module.exports = {
   devtool: 'eval-source-map',
-  entry: './array.js',
+  entry: {
+    Array:'./Array.js',
+    Stack:'./Stack.js',
+    Quene:'./Queue.js'
+  },
   output: {
-    filename: './dist/bundle.js'
+    filename: './dist/[name].js'
   }
 };
