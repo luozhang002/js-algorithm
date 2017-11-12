@@ -3,7 +3,8 @@ module.exports = {
   entry: {
     Array:'./Array.js',
     Stack:'./Stack.js',
-    Quene:'./Queue.js'
+    Quene:'./Queue.js',
+    LinkList:'./LinkList.js'
   },
   output: {
     filename: './dist/[name].js'

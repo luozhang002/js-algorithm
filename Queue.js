@@ -1,7 +1,7 @@
 document.write('<h1 style="color:red">Queue</h1>' )
 
 //既然是队列我们需要数组来存储队列总的元素
-
+document.write("关于队列具体请看控制台")
 function Queue() {
   //用于存储队列中的内容
   var items = [];
