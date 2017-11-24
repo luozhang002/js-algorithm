@@ -1,4 +1,5 @@
 document.write('<h1 style="color:red">LinkList</h1>' )
+document.write('关于单链表具体可查看控制台' )
 
 //创建一个链表
 
@@ -27,7 +28,7 @@ function LinkedList () {
     }
     length++
   }
-
+  // 从指定位置移除元素
   this.removeAt = function(position) {
     if (position > -1 && position < length) {
       var current = head,
@@ -37,6 +38,7 @@ function LinkedList () {
         head = current.next;
       }
       while( index++ < position){
+        previous = current;
         current = current.next;
       }
       previous.next = current.next;
@@ -46,29 +48,75 @@ function LinkedList () {
       return null
     }
   }
+  //在任意位置插入元素
+  this.insert = function(position,element) {
+    if (position >= 0 && position <=length) {
+      var node = new Node(element),
+      current=head;
+      previous,
+      index=0;
 
-  this.insert = function(element) {
-    //链表中寻找指定element元素
-  }
+      if (position  == 0 ) {
+        node.next = current;
+        head = node;
+      } else {
+        while (index++ <postion) {
+          previous = current;
+          current = current.next;
+        }
 
-  this.remove = function (element) {
+        node.text = current;
+        previous.next = node;
+      }
 
-  }
+      length++;
 
-  this.indexOf = function() {
+      return true;
 
+    } else {
+      return false;
+    }
   }
 
   this.isEmpty = function(){
-
+    return length === 0;
   }
 
   this.size = function() {
-
+    return length;
   }
 
   this.toString = function() {
+    var current = head,
+    string='';
+    while(current) {
+      string = current.element;
+      current = current.next;
+    }
+    return string;
+  }
 
+   this.indexOf = function(element) {
+    var current = head,
+    index =-1
+    while(current) {
+      if(element === current.element) {
+        return index;
+      }
+      index++;
+      current = current.next;
+    }
+    return -1;
+  }
+
+
+  this.remove = function (element) {
+    var index = this.indexOf(element);
+    return this.removeAt(index);
+  }
+
+  this.getHead = function() {
+    return head;
   }
 
   this.print = function(){

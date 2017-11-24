@@ -4,7 +4,8 @@ module.exports = {
     Array:'./Array.js',
     Stack:'./Stack.js',
     Quene:'./Queue.js',
-    LinkList:'./LinkList.js'
+    LinkList:'./LinkList.js',
+    DoublyLindedList:'./DoublyLindedList.js'
   },
   output: {
     filename: './dist/[name].js'
