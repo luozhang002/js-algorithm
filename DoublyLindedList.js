@@ -15,12 +15,11 @@ function DoublyLindedList(){
   //这里定义方法
   this.insert = function(position,element) {
     if(position >= 0 && position <= length ) {
-      var node = new Node(element) {
-        current = head,
-        previous,
-        index = 0;
-      }
-      if （!head）{
+      var node = new Node(element),
+      current = head,
+      previous,
+      index = 0
+      if(!head){
         head = node;
         tail = node;
       }else {
