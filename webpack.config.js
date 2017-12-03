@@ -7,7 +7,8 @@ module.exports = {
     LinkList:'./LinkList.js',
     // DoublyLindedList:'./DoublyLindedList.js',
     Sort:'./Sort.js',
-    Set:'./Set.js'
+    Set:'./Set.js',
+    Dictionary:'./Dictionary.js'
   },
   output: {
     filename: './dist/[name].js'
