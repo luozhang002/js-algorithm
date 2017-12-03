@@ -6,7 +6,8 @@ module.exports = {
     Quene:'./Queue.js',
     LinkList:'./LinkList.js',
     // DoublyLindedList:'./DoublyLindedList.js',
-    Sort:'./Sort.js'
+    Sort:'./Sort.js',
+    Set:'./Set.js'
   },
   output: {
     filename: './dist/[name].js'
