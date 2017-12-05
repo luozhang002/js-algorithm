@@ -1,7 +1,7 @@
 document.write('<h1 style="color:red">Dictionary</h1>' )
 document.write('关于Dictionary集合可查看控制台:无序集合，我们是用对象并不是用数组表示' )
 
-function Dictionary() {
+export function Dictionary() {
   var items = {}
 
   //has
@@ -51,7 +51,6 @@ function Dictionary() {
     return items
   }
 }
-
 
 var dictionary = new Dictionary();
 dictionary.set("xiaoluo","xiaoluo@meili-inc.com")

@@ -9,9 +9,20 @@ module.exports = {
     Sort:'./Sort.js',
     Set:'./Set.js',
     Dictionary:'./Dictionary.js',
-    HashTable:'./HashTable.js'
+    HashTable:'./HashTable.js',
+    Tree:'./Tree.js',
+    Graph:'./Graph.js'
   },
   output: {
     filename: './dist/[name].js'
-  }
+  },
+  module: {
+    loaders:[
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+        exclude: /node_modules/
+      }
+   ]
+  },
 };
