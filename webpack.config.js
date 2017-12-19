@@ -11,7 +11,8 @@ module.exports = {
     Dictionary:'./Dictionary.js',
     HashTable:'./HashTable.js',
     Tree:'./Tree.js',
-    Graph:'./Graph.js'
+    Graph:'./Graph.js',
+    Search:'./Search.js'
   },
   output: {
     filename: './dist/[name].js'

@@ -12,8 +12,4 @@ function ArrayList() {
   this.toString = function() {
     return array.join();
   }
-
-  this.bubbleSort = function(array) {
-
-  }
 }
